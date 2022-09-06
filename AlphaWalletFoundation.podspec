@@ -1,42 +1,54 @@
 #
-# Be sure to run `pod lib lint AlphaWalletFoundation.podspec' to ensure this is a
-# valid spec before submitting.
+#  Be sure to run `pod spec lint AlphaWalletFoundation.podspec' to ensure this is a
+#  valid spec and to remove all comments including this before submitting the spec.
 #
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
+#  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
+#  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
 #
 
-Pod::Spec.new do |s|
-  s.name             = 'AlphaWalletFoundation'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of AlphaWalletFoundation.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/vladyslav-iosdev/AlphaWalletFoundation'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'vladyslav-iosdev' => 'krypto.pank@gmail.com' }
-  s.source           = { :git => 'https://github.com/vladyslav-iosdev/AlphaWalletFoundation.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '10.0'
-
-  s.source_files = 'AlphaWalletFoundation/Classes/**/*'
+Pod::Spec.new do |spec|
+  spec.name         = "AlphaWalletFoundation"
+  spec.version      = "1.0.0"
+  spec.summary      = "AlphaWallet functionality"
+  spec.description      = "Core wallet functionality"
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
+  spec.author             = { "Vladyslav Shepitko" => "vladyslav.shepitko@gmail.com" }
+  spec.homepage     = "https://github.com/AlphaWallet/alpha-wallet-ios/tree/master/modules/AlphaWalletFoundation"
+  spec.ios.deployment_target = '13.0'
+  spec.swift_version    = '4.2'
+  spec.platform         = :ios, "13.0"
+  spec.source           = { :git => 'git@github.com:AlphaWallet/alpha-wallet-ios.git', :tag => "#{spec.version}" }
+  spec.source_files     = 'AlphaWalletFoundation/**/*.{h,m,swift}'
+  spec.pod_target_xcconfig = { 'SWIFT_OPTIMIZATION_LEVEL' => '-Owholemodule' }
+  spec.resource_bundles = {'AlphaWalletFoundation' => ['AlphaWalletFoundation/**/*.{graphql,json}'] }
   
-  # s.resource_bundles = {
-  #   'AlphaWalletFoundation' => ['AlphaWalletFoundation/Assets/*.png']
-  # }
+  spec.dependency 'BigInt'
+  spec.dependency 'JSONRPCKit'
+  spec.dependency 'APIKit'
+  spec.dependency 'SwiftLint'
+  spec.dependency 'RealmSwift'
+  spec.dependency 'Moya'
+  spec.dependency 'CryptoSwift'
+  spec.dependency 'Kingfisher'
+  spec.dependency 'AlphaWalletWeb3Provider'
+  spec.dependency 'TrezorCrypto'
+  spec.dependency 'TrustKeystore'
+  spec.dependency 'SwiftyJSON'
+  spec.dependency 'web3swift' 
+  spec.dependency 'PromiseKit/CorePromise'
+  spec.dependency 'PromiseKit/Alamofire'
+  spec.dependency 'Kanna'
+  spec.dependency 'TrustWalletCore'
+  spec.dependency 'EthereumABI'
+  spec.dependency 'BlockiesSwift'
+  spec.dependency 'PaperTrailLumberjack/Swift'
+  spec.dependency 'AlphaWalletAddress'
+  spec.dependency 'AlphaWalletCore'
+  spec.dependency 'AlphaWalletGoBack'
+  spec.dependency 'AlphaWalletENS'
+  spec.dependency 'AlphaWalletOpenSea'
+  spec.dependency 'Apollo'
+  spec.dependency 'MailchimpSDK'
+  spec.dependency 'CombineExt'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

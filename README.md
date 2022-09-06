@@ -22,7 +22,7 @@ pod 'AlphaWalletFoundation'
 
 ## Author
 
-vladyslav-iosdev, krypto.pank@gmail.com
+krypto.pank, krypto.pank@gmail.com
 
 ## License
 

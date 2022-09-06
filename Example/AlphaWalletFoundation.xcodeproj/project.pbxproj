@@ -14,6 +14,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		87B1B5DB28C77E4B0072A5E2 /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B1B5DA28C77E4B0072A5E2 /* KeychainStorage.swift */; };
+		87B1B5E728C7871D0072A5E2 /* AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B1B5E628C7871D0072A5E2 /* AnalyticsService.swift */; };
 		E1F01143F5571C3EA91594EC /* Pods_AlphaWalletFoundation_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BE976CAC283BF19339E316 /* Pods_AlphaWalletFoundation_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,9 +31,9 @@
 
 /* Begin PBXFileReference section */
 		0B027DEF38A42E0673E57B14 /* Pods-AlphaWalletFoundation_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlphaWalletFoundation_Example.release.xcconfig"; path = "Target Support Files/Pods-AlphaWalletFoundation_Example/Pods-AlphaWalletFoundation_Example.release.xcconfig"; sourceTree = "<group>"; };
-		3A0E150EE6B6984C4F8A23DA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3A0E150EE6B6984C4F8A23DA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3A7F4685F85217DF4232442A /* Pods-AlphaWalletFoundation_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlphaWalletFoundation_Example.debug.xcconfig"; path = "Target Support Files/Pods-AlphaWalletFoundation_Example/Pods-AlphaWalletFoundation_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4F05D7752347E76CB7DB575E /* AlphaWalletFoundation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AlphaWalletFoundation.podspec; path = ../AlphaWalletFoundation.podspec; sourceTree = "<group>"; };
+		4F05D7752347E76CB7DB575E /* AlphaWalletFoundation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AlphaWalletFoundation.podspec; path = ../AlphaWalletFoundation.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5D34C380811168651DC024C3 /* Pods_AlphaWalletFoundation_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlphaWalletFoundation_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* AlphaWalletFoundation_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlphaWalletFoundation_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,8 +47,15 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		69C18D6006D1735D48EF36D5 /* Pods-AlphaWalletFoundation_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlphaWalletFoundation_Tests.release.xcconfig"; path = "Target Support Files/Pods-AlphaWalletFoundation_Tests/Pods-AlphaWalletFoundation_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		71BE976CAC283BF19339E316 /* Pods_AlphaWalletFoundation_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlphaWalletFoundation_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87B1B5DA28C77E4B0072A5E2 /* KeychainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
+		87B1B5E128C784C00072A5E2 /* AlphaWalletGoBack.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = AlphaWalletGoBack.podspec; path = ../AlphaWalletGoBack.podspec; sourceTree = "<group>"; };
+		87B1B5E228C784C10072A5E2 /* AlphaWalletCore.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = AlphaWalletCore.podspec; path = ../AlphaWalletCore.podspec; sourceTree = "<group>"; };
+		87B1B5E328C784C10072A5E2 /* AlphaWalletENS.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = AlphaWalletENS.podspec; path = ../AlphaWalletENS.podspec; sourceTree = "<group>"; };
+		87B1B5E428C784C10072A5E2 /* AlphaWalletAddress.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = AlphaWalletAddress.podspec; path = ../AlphaWalletAddress.podspec; sourceTree = "<group>"; };
+		87B1B5E528C784C10072A5E2 /* AlphaWalletOpenSea.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = AlphaWalletOpenSea.podspec; path = ../AlphaWalletOpenSea.podspec; sourceTree = "<group>"; };
+		87B1B5E628C7871D0072A5E2 /* AnalyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsService.swift; sourceTree = "<group>"; };
 		AB2DEC56BD7F968869D8A370 /* Pods-AlphaWalletFoundation_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlphaWalletFoundation_Tests.debug.xcconfig"; path = "Target Support Files/Pods-AlphaWalletFoundation_Tests/Pods-AlphaWalletFoundation_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D580F9BA361B113B551B2265 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D580F9BA361B113B551B2265 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +117,8 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				87B1B5DA28C77E4B0072A5E2 /* KeychainStorage.swift */,
+				87B1B5E628C7871D0072A5E2 /* AnalyticsService.swift */,
 			);
 			name = "Example for AlphaWalletFoundation";
 			path = AlphaWalletFoundation;
@@ -141,6 +152,11 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				87B1B5E428C784C10072A5E2 /* AlphaWalletAddress.podspec */,
+				87B1B5E228C784C10072A5E2 /* AlphaWalletCore.podspec */,
+				87B1B5E328C784C10072A5E2 /* AlphaWalletENS.podspec */,
+				87B1B5E128C784C00072A5E2 /* AlphaWalletGoBack.podspec */,
+				87B1B5E528C784C10072A5E2 /* AlphaWalletOpenSea.podspec */,
 				4F05D7752347E76CB7DB575E /* AlphaWalletFoundation.podspec */,
 				D580F9BA361B113B551B2265 /* README.md */,
 				3A0E150EE6B6984C4F8A23DA /* LICENSE */,
@@ -156,7 +172,6 @@
 				AB2DEC56BD7F968869D8A370 /* Pods-AlphaWalletFoundation_Tests.debug.xcconfig */,
 				69C18D6006D1735D48EF36D5 /* Pods-AlphaWalletFoundation_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -172,6 +187,7 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				7AE43B3D33630C85E3E77349 /* [CP] Embed Pods Frameworks */,
+				BF6E1D31C0ADFDA07F56DDFA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,6 +243,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -291,11 +308,87 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-AlphaWalletFoundation_Example/Pods-AlphaWalletFoundation_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/APIKit/APIKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-Synchronous/Alamofire_Synchronous.framework",
+				"${BUILT_PRODUCTS_DIR}/AlphaWalletAddress/AlphaWalletAddress.framework",
+				"${BUILT_PRODUCTS_DIR}/AlphaWalletCore/AlphaWalletCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AlphaWalletENS/AlphaWalletENS.framework",
 				"${BUILT_PRODUCTS_DIR}/AlphaWalletFoundation/AlphaWalletFoundation.framework",
+				"${BUILT_PRODUCTS_DIR}/AlphaWalletGoBack/AlphaWalletGoBack.framework",
+				"${BUILT_PRODUCTS_DIR}/AlphaWalletOpenSea/AlphaWalletOpenSea.framework",
+				"${BUILT_PRODUCTS_DIR}/Apollo/Apollo.framework",
+				"${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework",
+				"${BUILT_PRODUCTS_DIR}/BlockiesSwift/BlockiesSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/CombineExt/CombineExt.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/EthereumABI/EthereumABI.framework",
+				"${BUILT_PRODUCTS_DIR}/EthereumAddress/EthereumAddress.framework",
+				"${BUILT_PRODUCTS_DIR}/JSONRPCKit/JSONRPCKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Kanna/Kanna.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/PaperTrailLumberjack/PaperTrailLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SAMKeychain/SAMKeychain.framework",
+				"${BUILT_PRODUCTS_DIR}/SipHash/SipHash.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftProtobuf/SwiftProtobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TrezorCrypto/TrezorCrypto.framework",
+				"${BUILT_PRODUCTS_DIR}/TrustKeystore/TrustKeystore.framework",
+				"${BUILT_PRODUCTS_DIR}/TrustWalletCore/WalletCore.framework",
+				"${BUILT_PRODUCTS_DIR}/libsodium/libsodium.framework",
+				"${BUILT_PRODUCTS_DIR}/secp256k1_ios/secp256k1_ios.framework",
+				"${BUILT_PRODUCTS_DIR}/web3swift/web3swift.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MailchimpSDK/MailchimpSDK.framework/MailchimpSDK",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/APIKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire_Synchronous.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlphaWalletAddress.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlphaWalletCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlphaWalletENS.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlphaWalletFoundation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlphaWalletGoBack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlphaWalletOpenSea.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Apollo.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BigInt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BlockiesSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CombineExt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EthereumABI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EthereumAddress.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONRPCKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kanna.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PaperTrailLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SAMKeychain.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SipHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftProtobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TrezorCrypto.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TrustKeystore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WalletCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libsodium.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/secp256k1_ios.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/web3swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MailchimpSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -324,6 +417,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BF6E1D31C0ADFDA07F56DDFA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlphaWalletFoundation_Example/Pods-AlphaWalletFoundation_Example-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/AlphaWalletWeb3Provider/AlphaWalletWeb3Provider.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AlphaWalletWeb3Provider.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlphaWalletFoundation_Example/Pods-AlphaWalletFoundation_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -333,6 +444,8 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				87B1B5E728C7871D0072A5E2 /* AnalyticsService.swift in Sources */,
+				87B1B5DB28C77E4B0072A5E2 /* KeychainStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,7 +532,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -465,7 +578,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -479,6 +592,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AlphaWalletFoundation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -494,6 +608,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AlphaWalletFoundation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";

@@ -1,5 +1,5 @@
 import XCTest
-import AlphaWalletFoundation
+//import AlphaWalletFoundation
 
 class Tests: XCTestCase {
     
